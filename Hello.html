@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LIFF Starter</title>
+        <link rel="stylesheet" href="style.css">
+		<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+		
+	<script>	function initializeLiff(https://liff.line.me/1654239311-m44xvlGR) {
+    liff
+        .init({
+            liffId: https://liff.line.me/1654239311-m44xvlGR
+        })
+        .then(() => {
+            // start to use LIFF's api
+            initializeApp();
+        })
+        .catch((err) => {
+            document.getElementById("liffAppContent").classList.add('hidden');
+            document.getElementById("liffInitErrorMessage").classList.remove('hidden');
+        });
+}
+if (liff.isApiAvailable('shareTargetPicker')) {
+  liff.shareTargetPicker([
+    {
+      type: "text",
+      text: "Hello, World!"
+    }
+  ])
+}
+</script>
